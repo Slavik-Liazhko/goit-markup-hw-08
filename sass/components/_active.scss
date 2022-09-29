@@ -1,0 +1,17 @@
+.site-nav-link:hover,
+.site-nav-link:focus,
+.site-nav .active,
+.auth-nav .auth-nav-link:hover,
+.auth-nav .auth-nav-link:focus {
+  color: var(--accent-color);
+}
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -1px;
+  background-color: var(--accent-color);
+}

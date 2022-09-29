@@ -1,0 +1,26 @@
+.section-hero .hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+
+  padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px var(--dark-boxshadow-color);
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--light-font-color);
+
+  cursor: pointer;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
+
+  &:hover {
+    background-color: var(--accent-bg-color);
+    cursor: pointer;
+  }
+}

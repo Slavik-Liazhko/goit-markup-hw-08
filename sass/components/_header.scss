@@ -1,0 +1,180 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+.logo-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo span {
+  color: var(--dark-font-color);
+}
+.logo-footer {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.logo-footer span {
+  color: var(--light-font-color);
+}
+.page-navigation {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-right: 84px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+.site-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.site-nav__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-right: 50px;
+  }
+}
+.auth-nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+.site-nav__item:not(:last-child),
+.auth-nav__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-right: 50px;
+  }
+}
+.site-nav .site-nav__link {
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 14px;
+    color: var(--dark-font-color);
+    transition: color var(--transition-duration) var(--transition-timing);
+  }
+}
+.auth-nav .auth-nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-bottom: 10px;
+  letter-spacing: 0.02em;
+  color: var(--desc-font-color);
+  fill: currentColor;
+  transition: color var(--transition-duration) var(--transition-timing);
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.auth-nav-icon-envelope {
+  @media screen and(min-width:768px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 10px;
+    transition: fill var(--transition-duration) var(--transition-timing);
+  }
+  /* fill: var(--desc-font-color); */
+}
+.auth-nav-icon-tel {
+  @media screen and(min-width:768px) {
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+    transition: fill var(--transition-duration) var(--transition-timing);
+  }
+  /* fill: var(--desc-font-color); */
+}
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav .active,
+.auth-nav .auth-nav__link:hover,
+.auth-nav .auth-nav__link:focus {
+  color: var(--accent-color);
+}
+.auth-nav__link:hover .auth-nav-icon-envelope,
+.auth-nav__link:hover .auth-nav-icon-tel,
+.auth-nav__link:focus .auth-nav-icon-envelope,
+.auth-nav__link:focus .auth-nav-icon-tel {
+  fill: var(--accent-bg-color);
+}
+.mobile-menu-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.mobile-menu-button-icon {
+  width: 40px;
+  height: 40px;
+  transition: fill 250ms var(--transition-timing);
+  .mobile-menu-button:hover &,
+  .mobile-menu-button:focus & {
+    fill: var(--accent-color);
+  }
+}
